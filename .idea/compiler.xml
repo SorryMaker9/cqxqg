@@ -7,17 +7,17 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="youcai-infrastructure" />
-        <module name="youcai-common" />
-        <module name="youcai-admin" />
+        <module name="frame-admin-common" />
+        <module name="frame-admin-server" />
+        <module name="frame-admin-infrastructure" />
       </profile>
     </annotationProcessing>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="youcai-admin" options="-parameters" />
-      <module name="youcai-common" options="-parameters" />
-      <module name="youcai-infrastructure" options="-parameters" />
+      <module name="frame-admin-common" options="-parameters" />
+      <module name="frame-admin-infrastructure" options="-parameters" />
+      <module name="frame-admin-server" options="-parameters" />
     </option>
   </component>
 </project>
