@@ -4,7 +4,7 @@ server:
     context-path: /api
 spring:
   profiles:
-    active: test
+    active: dev
   application:
     name: local-test-server
   jackson:
@@ -64,14 +64,14 @@ mybatis-plus:
 spring:
   profiles: dev
 db:
-  url: jdbc:mysql://124.222.236.78:3306/swak?allowMultiQueries=true&serverTimezone=Asia/Shanghai
-  username: swak
-  password: swak@123
+  url: jdbc:mysql://10.1.0.43:3306/xqgframe?allowMultiQueries=true&serverTimezone=Asia/Shanghai
+  username: root
+  password: youcai_test
 ---
 spring:
   profiles: test
 db:
-  url: jdbc:mysql://10.1.0.50:3306/xqgframe?allowMultiQueries=true&serverTimezone=Asia/Shanghai
+  url: jdbc:mysql://10.1.0.43:3306/xqgframe?allowMultiQueries=true&serverTimezone=Asia/Shanghai
   username: root
   password: youcai_test
 ---
